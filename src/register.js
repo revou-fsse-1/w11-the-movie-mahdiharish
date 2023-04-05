@@ -82,7 +82,7 @@ let registerNewUser = async () => {
   }
 };
 
-// REGISTER NEW USER
+// REGISTER NEW USER AND REDIRECT TO LOGIN PAGE
 const usernameInput = document.getElementById("registerUsername");
 const emailInput = document.getElementById("registerEmail");
 const passwordInput = document.getElementById("registerPassword");
