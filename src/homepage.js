@@ -21,7 +21,7 @@ const loadCurrentlyWatching = async () => {
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
       id ="${data[i].id}"
     >
-      ${data[i].rating * 10}%
+      ${data[i].rating}/10
     </p>
       </a>
         `;
@@ -55,7 +55,7 @@ const loadSuggestedToWatch = async () => {
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
       id ="${data[i].id}"
     >
-      ${data[i].rating * 10}%
+      ${data[i].rating}/10
     </p>
       </a>
         `;
@@ -89,7 +89,7 @@ const loadPreviouslyWatched = async () => {
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
       id ="${data[i].id}"
     >
-      ${data[i].rating * 10}%
+      ${data[i].rating}/10
     </p>
       </a>
         `;
