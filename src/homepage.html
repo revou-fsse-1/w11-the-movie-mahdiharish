@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>The Movie Watchlist - Home</title>
+  </head>
+  <body class="m-4 p-1">
+    <!-- HEADER DESKTOP -->
+    <header
+      class="sticky flex justify-between items-center bg-white w-full h-[100px] z-2 m-auto"
+    >
+      <h1 class="text-lg font-bold mr-[20px]">
+        The <br />Movie <br />Watchlist
+      </h1>
+      <input
+        class="flex justify-between items-center w-[600px] h-[50px] rounded-full bg-gray-300 border-gray-500 focus:border-blue-500 placeholder:text-gray-800 text-center"
+        placeholder="Search movie or series"
+      />
+      <button class="w-[150px] h-[50px] rounded-lg bg-gray-300 border-gray-500">
+        <a class="font-semibold" href="./watchlist.html">Watchlist</a>
+      </button>
+    </header>
+    <!-- MAIN CONTENT -->
+    <div class="pt-[10px]" id="pageContent">
+      <!-- CURRENTLY WATCHING -->
+      <section class="mb-10 md:w-full overflow-x-hidden col-start-1 col-end-2">
+        <h2 class="text-xl font-medium">Currently Watching</h2>
+        <div class="flex flex-wrap gap-6 py-4" id="currentlyWatching"></div>
+      </section>
+      <!-- SUGGESTED TO WATCH -->
+      <section class="mb-10 md:w-full overflow-x-hidden col-start-2 col-end-3">
+        <h2 class="text-xl font-medium">Suggested To Watch</h2>
+        <div class="flex flex-wrap gap-5 py-4" id="suggestedToWatch"></div>
+      </section>
+      <!-- PREVIOUSLY WATCHED -->
+      <section class="mb-10 md:w-full overflow-x-hidden col-start-2 col-end-3">
+        <h2 class="text-xl font-medium">Previously Watched</h2>
+        <div class="flex flex-wrap gap-5 py-4" id="previouslyWatched"></div>
+      </section>
+    </div>
+    <script src="homepage.js"></script>
+  </body>
+</html>

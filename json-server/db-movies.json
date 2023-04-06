@@ -429,7 +429,7 @@
         "Drama"
       ],
       "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
-      "imdb_rating": 9,
+      "rating": 9,
       "isWatched": false
     },
     {
@@ -444,7 +444,7 @@
         "Drama"
       ],
       "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
-      "imdb_rating": 8.2,
+      "rating": 8.2,
       "isWatched": false
     },
     {
@@ -459,7 +459,7 @@
         "superhero"
       ],
       "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
-      "imdb_rating": 8.4,
+      "rating": 8.4,
       "isWatched": false
     },
     {
@@ -474,7 +474,7 @@
         "superhero"
       ],
       "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
-      "imdb_rating": 8.4,
+      "rating": 8.4,
       "isWatched": false
     }
   ],
