@@ -20,6 +20,7 @@ const loadCurrentlyWatching = async () => {
       <p
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
       id ="${data[i].id}"
+      onclick="showMovieDetails(this)"
     >
       ${data[i].rating}/10
     </p>
@@ -54,6 +55,7 @@ const loadSuggestedToWatch = async () => {
       <p
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
       id ="${data[i].id}"
+      onclick="showMovieDetails(this)"
     >
       ${data[i].rating}/10
     </p>
@@ -88,6 +90,7 @@ const loadPreviouslyWatched = async () => {
       <p
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
       id ="${data[i].id}"
+      onclick="showMovieDetails(this)"
     >
       ${data[i].rating}/10
     </p>
@@ -99,3 +102,9 @@ const loadPreviouslyWatched = async () => {
   }
 };
 loadPreviouslyWatched();
+
+const showMovieDetails = (e) => {
+  const movieId = e.getAttribute("id");
+  localStorage.setItem("movieId", `${movieId}`);
+  window.location.href = `moviepage.html?id=${movieId}`;
+};

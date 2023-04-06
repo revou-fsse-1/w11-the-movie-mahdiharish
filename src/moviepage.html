@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Movie Page</title>
+  </head>
+  <body class="m-4 p-1">
+    <header
+      class="sticky flex justify-between items-center bg-white w-full h-[100px] z-2 m-auto"
+    >
+      <h1 class="text-lg font-bold mr-[20px]">
+        The <br />Movie <br />Watchlist
+      </h1>
+      <input
+        class="flex justify-between items-center w-[600px] h-[50px] rounded-full bg-gray-300 border-gray-500 focus:border-blue-500 placeholder:text-gray-800 text-center"
+        placeholder="Search movie or series"
+      />
+      <button class="w-[150px] h-[50px] rounded-lg bg-gray-300 border-gray-500">
+        <a class="font-semibold" href="./watchlist.html">Watchlist</a>
+      </button>
+    </header>
+    <div class="flex justify-between items-center mt-6">
+      <h2 id="movieTitle" class="text-[50px] font-bold">Placeholder</h2>
+      <button
+        id="addToWatchlistBtn"
+        class="w-[150px] h-[50px] rounded-lg bg-gray-300 border-gray-500"
+      >
+        Add to Watchlist
+      </button>
+    </div>
+    <div class="flex justify-between items-center gap-10">
+      <div class="flex flex-col items-start justify-start w-full">
+        <div
+          id="moviePoster"
+          class="h-full rounded-lg overflow-hidden bg-slate-500"
+        ></div>
+        <div class="flex flex-col justify-center h-full">
+          <div id="movieGenre" class="flex flex-wrap gap-5"></div>
+          <p id="movieSynopsis" class="text-lg font-medium leading-4 mt-5">
+            Placeholder
+          </p>
+          <div>
+            <p class="text-lg font-semibold">IMDB Rating</p>
+            <p id="movieRating" class="text-sm"></p>
+          </div>
+        </div>
+      </div>
+      <div id="movieTrailer" class="w-full min-h-fit">Video here</div>
+    </div>
+    <script src="moviepage.js"></script>
+  </body>
+</html>
