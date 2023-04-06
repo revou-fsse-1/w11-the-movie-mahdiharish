@@ -2,7 +2,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-const movieId = localStorage.getItem("movieId");
 const API_ENDPOINT_MOVIES = `http://localhost:3000/movies/${id}`;
 const movieTitle = document.getElementById("movieTitle");
 const movieSynopsis = document.getElementById("movieSynopsis");
@@ -10,7 +9,6 @@ const moviePoster = document.getElementById("moviePoster");
 const movieTrailer = document.getElementById("movieTrailer");
 const movieGenre = document.getElementById("movieGenre");
 const movieRating = document.getElementById("movieRating");
-const addToWatchlist = document.getElementById("addToWatchlistBtn");
 
 const loadMovieDetails = async () => {
   try {
@@ -34,3 +32,36 @@ const loadMovieDetails = async () => {
 loadMovieDetails();
 
 // ADD MOVIE TO WATCHLIST
+const movieId = new URLSearchParams(window.location.search).get("id");
+const addToWatchlistBtn = document.getElementById("addToWatchlistBtn");
+
+addToWatchlistBtn.addEventListener("click", async () => {
+  try {
+    const response = await fetch(`http://localhost:3000/movies/${movieId}`);
+    const movieData = await response.json();
+    const watchlistData = {
+      title: movieData.title,
+      image: movieData.image,
+      synopsis: movieData.synopsis,
+      genre: movieData.genre,
+      production: movieData.production,
+      trailer: movieData.trailer,
+      rating: movieData.rating,
+    };
+    const postOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(watchlistData),
+    };
+    const postResponse = await fetch(
+      "http://localhost:3000/watchlist",
+      postOptions
+    );
+    const postResult = await postResponse.json();
+    console.log(postResult);
+    alert("Movie added to watchlist!");
+  } catch (error) {
+    console.error(error);
+    alert("Failed to add movie to watchlist!");
+  }
+});
