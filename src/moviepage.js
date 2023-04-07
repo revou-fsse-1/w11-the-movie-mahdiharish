@@ -35,6 +35,31 @@ loadMovieDetails();
 const movieId = new URLSearchParams(window.location.search).get("id");
 const addToWatchlistBtn = document.getElementById("addToWatchlistBtn");
 
+const updateButton = async () => {
+  try {
+    const response = await fetch("http://localhost:3000/watchlist");
+    const watchlistData = await response.json();
+
+    // Define movieData here
+    const movieResponse = await fetch(
+      `http://localhost:3000/movies/${movieId}`
+    );
+    const movieData = await movieResponse.json();
+
+    const movieInWatchlist = watchlistData.find(
+      (movie) => movie.title === movieData.title
+    );
+    if (movieInWatchlist) {
+      addToWatchlistBtn.innerHTML = "Remove from Watchlist";
+    } else {
+      addToWatchlistBtn.innerHTML = "Add to Watchlist";
+    }
+  } catch (error) {
+    console.error(error);
+  }
+};
+updateButton();
+
 addToWatchlistBtn.addEventListener("click", async () => {
   try {
     const response = await fetch(`http://localhost:3000/movies/${movieId}`);
@@ -53,15 +78,31 @@ addToWatchlistBtn.addEventListener("click", async () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(watchlistData),
     };
-    const postResponse = await fetch(
-      "http://localhost:3000/watchlist",
-      postOptions
+    const responseRemove = await fetch("http://localhost:3000/watchlist");
+    const removeWatchlistData = await responseRemove.json();
+    const movieInWatchlist = removeWatchlistData.find(
+      (movie) => movie.title === movieData.title
     );
-    const postResult = await postResponse.json();
-    console.log(postResult);
-    alert("Movie added to watchlist!");
+    if (movieInWatchlist) {
+      const deleteResponse = await fetch(
+        `http://localhost:3000/watchlist/${movieInWatchlist.id}`,
+        { method: "DELETE" }
+      );
+      const deleteResult = await deleteResponse.json();
+      console.log(deleteResult);
+      alert("Movie removed from watchlist!");
+    } else {
+      const postResponse = await fetch(
+        "http://localhost:3000/watchlist",
+        postOptions
+      );
+      const postResult = await postResponse.json();
+      console.log(postResult);
+      alert("Movie added to watchlist!");
+    }
+    updateButton();
   } catch (error) {
     console.error(error);
-    alert("Failed to add movie to watchlist!");
+    alert("Failed to modify watchlist!");
   }
 });
