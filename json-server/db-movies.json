@@ -524,18 +524,6 @@
       "id": 7
     },
     {
-      "title": "Batman Begins",
-      "image": "https://th.bing.com/th/id/OIP.yFTkE2zLgrXuK1nTYLqBZAHaJ3?w=138&h=184&c=7&r=0&o=5&pid=1.7",
-      "synopsis": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
-      "genre": [
-        "Action",
-        "Crime",
-        "Drama"
-      ],
-      "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
-      "id": 8
-    },
-    {
       "title": "Avatar",
       "image": "https://media.21cineplex.com/webcontent/gallery/pictures/16625437697033_405x594.jpg",
       "synopsis": "Avatar akan kembali ke layar lebar.Seorang Marinir lumpuh dikirim ke bulan Pandora untuk menjalani misi khusus namun, ia justru dilema antara mengikuti perintah atau melindungi dunia baru yang pelan-pelan ia panggil rumah",
@@ -548,6 +536,32 @@
       "trailer": "https://www.youtube.com/embed/NZrX_ES93JA",
       "rating": 8.5,
       "id": 9
+    },
+    {
+      "title": "Avengers: Endgame",
+      "image": "https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wHaJ4?w=139&h=185&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+      "rating": 8.4,
+      "id": 10
+    },
+    {
+      "title": "Batman Begins",
+      "image": "https://th.bing.com/th/id/OIP.yFTkE2zLgrXuK1nTYLqBZAHaJ3?w=138&h=184&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
+      "rating": 8.2,
+      "id": 11
     }
   ]
 }
