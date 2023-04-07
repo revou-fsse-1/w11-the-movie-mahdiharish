@@ -139,7 +139,7 @@
         "Drama"
       ],
       "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
-      "imdb_rating": 9,
+      "rating": 9,
       "isWatched": false
     },
     {
@@ -154,7 +154,7 @@
         "Drama"
       ],
       "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
-      "imdb_rating": 8.2,
+      "rating": 8.2,
       "isWatched": false
     },
     {
@@ -169,7 +169,7 @@
         "superhero"
       ],
       "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
-      "imdb_rating": 8.4,
+      "rating": 8.4,
       "isWatched": false
     },
     {
@@ -184,7 +184,7 @@
         "superhero"
       ],
       "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
-      "imdb_rating": 8.4,
+      "rating": 8.4,
       "isWatched": false
     },
     {
@@ -288,7 +288,7 @@
         "Drama"
       ],
       "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
-      "imdb_rating": 9,
+      "rating": 9,
       "isWatched": false
     },
     {
@@ -303,7 +303,7 @@
         "Drama"
       ],
       "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
-      "imdb_rating": 8.2,
+      "rating": 8.2,
       "isWatched": false
     },
     {
@@ -318,7 +318,7 @@
         "superhero"
       ],
       "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
-      "imdb_rating": 8.4,
+      "rating": 8.4,
       "isWatched": false
     },
     {
@@ -333,7 +333,7 @@
         "superhero"
       ],
       "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
-      "imdb_rating": 8.4,
+      "rating": 8.4,
       "isWatched": false
     }
   ],
@@ -534,6 +534,20 @@
       ],
       "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
       "id": 8
+    },
+    {
+      "title": "Avatar",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/16625437697033_405x594.jpg",
+      "synopsis": "Avatar akan kembali ke layar lebar.Seorang Marinir lumpuh dikirim ke bulan Pandora untuk menjalani misi khusus namun, ia justru dilema antara mengikuti perintah atau melindungi dunia baru yang pelan-pelan ia panggil rumah",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/NZrX_ES93JA",
+      "rating": 8.5,
+      "id": 9
     }
   ]
 }
