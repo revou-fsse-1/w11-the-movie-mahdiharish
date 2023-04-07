@@ -516,6 +516,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -534,6 +568,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.order-first {
+  order: -9999;
 }
 
 .col-start-1 {
@@ -607,6 +645,22 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -826,6 +880,15 @@ video {
   gap: 2rem;
 }
 
+.gap-x-14 {
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -905,6 +968,11 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -955,12 +1023,21 @@ video {
   padding-right: 1rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pt-\[10px\] {
   padding-top: 10px;
 }
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1012,6 +1089,11 @@ video {
   font-size: 35px;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1034,6 +1116,10 @@ video {
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .text-blue-500 {
@@ -1154,6 +1240,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:order-last {
+    order: 9999;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1190,8 +1280,16 @@ video {
     margin-right: 1rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
@@ -1208,6 +1306,10 @@ video {
 
   .md\:w-\[600px\] {
     width: 600px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1269,6 +1371,11 @@ video {
 
   .md\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

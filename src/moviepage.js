@@ -17,7 +17,7 @@ const loadMovieDetails = async () => {
     console.log(data);
     movieTitle.innerHTML = `${data.title}`;
     movieSynopsis.innerHTML = `${data.synopsis}`;
-    moviePoster.innerHTML = `<img src="${data.image}" alt="${data.title}" class="object-cover w-[190px] h-[290px]">`;
+    moviePoster.innerHTML = `<img src="${data.image}" alt="${data.title}" class="object-cover w-full h-full">`;
     movieTrailer.innerHTML = `<embed src="${data.trailer}" class="rounded-lg aspect-video w-full h-full">`;
     movieRating.innerHTML = `⭐ ${data.rating}/10`;
     movieGenre.innerHTML = "";
