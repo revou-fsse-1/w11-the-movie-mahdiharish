@@ -55,3 +55,9 @@ searchInput.addEventListener("keydown", (event) => {
 // Initial load of all movies
 const query = new URLSearchParams(window.location.search).get("query");
 loadSearchResult(query);
+
+const showMovieDetails = (e) => {
+  const movieId = e.getAttribute("id");
+  localStorage.setItem("movieId", `${movieId}`);
+  window.location.href = `moviepage.html?id=${movieId}`;
+};
