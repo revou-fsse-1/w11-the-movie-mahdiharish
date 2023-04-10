@@ -106,3 +106,10 @@ addToWatchlistBtn.addEventListener("click", async () => {
     alert("Failed to modify watchlist!");
   }
 });
+
+const searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const searchInput = document.getElementById("searchInput").value;
+  window.location.href = `searchpage.html?query=${searchInput}`;
+});
