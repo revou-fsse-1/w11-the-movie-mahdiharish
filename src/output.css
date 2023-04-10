@@ -670,6 +670,26 @@ video {
   width: 100%;
 }
 
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-\[470px\] {
+  width: 470px;
+}
+
+.w-\[465px\] {
+  width: 465px;
+}
+
 .max-w-\[630px\] {
   max-width: 630px;
 }
@@ -720,6 +740,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-14 {
