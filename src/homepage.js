@@ -108,3 +108,10 @@ const showMovieDetails = (e) => {
   localStorage.setItem("movieId", `${movieId}`);
   window.location.href = `moviepage.html?id=${movieId}`;
 };
+
+const searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const searchInput = document.getElementById("searchInput").value;
+  window.location.href = `searchpage.html?query=${searchInput}`;
+});

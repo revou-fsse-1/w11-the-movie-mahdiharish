@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
-    <title>The Movie Watchlist - Home</title>
+    <title>Search Result</title>
   </head>
   <body class="m-4 p-1">
     <nav
@@ -18,14 +18,12 @@
           Watchlist
         </h1></a
       >
-      <form id="searchForm">
-        <input
-          id="searchInput"
-          type="text"
-          class="hidden md:flex justify-center items-end text-center text-xl text-black placeholder:text-black w-full max-w-[630px] bg-slate-300 h-14 rounded-full md:mt-10"
-          placeholder="Search movie or series"
-        />
-      </form>
+      <input
+        id="searchInput"
+        type="text"
+        class="hidden md:flex justify-center items-end text-center text-xl text-black placeholder:text-black w-full max-w-[630px] bg-slate-300 h-14 rounded-full md:mt-10"
+        placeholder="Search movie or series"
+      />
       <div class="flex gap-4">
         <button
           class="flex justify-center items-center text-[20px] bg-white w-10 h-10 rounded-full md:hidden"
@@ -58,27 +56,11 @@
         </a>
       </div>
     </nav>
-    <!-- MAIN CONTENT -->
-    <div class="pt-[10px] flex justify-between" id="pageContentTop">
-      <!-- CURRENTLY WATCHING -->
-      <section class="mb-10 md:w-full overflow-x-hidden col-start-1 col-end-2">
-        <h2 class="text-xl font-medium">Currently Watching</h2>
-        <div class="flex flex-wrap gap-6 py-4" id="currentlyWatching"></div>
-      </section>
-      <!-- SUGGESTED TO WATCH -->
-      <section class="mb-10 md:w-full overflow-x-hidden col-start-2 col-end-3">
-        <h2 class="text-xl font-medium">Suggested To Watch</h2>
-        <div class="flex flex-wrap gap-5 py-4" id="suggestedToWatch"></div>
-      </section>
-    </div>
-    <div>
-      <!-- PREVIOUSLY WATCHED -->
-      <section class="mb-10 md:w-full overflow-x-hidden col-start-2 col-end-3">
-        <h2 class="text-xl font-medium">Previously Watched</h2>
-        <div class="flex flex-wrap gap-5 py-4" id="previouslyWatched"></div>
-      </section>
-    </div>
-    <script src="homepage.js"></script>
+    <section class="mb-10 md:w-full overflow-x-hidden col-start-2 col-end-3">
+      <h2 class="text-xl font-medium">Search Result</h2>
+      <div class="flex flex-wrap gap-5 py-4" id="searchResult"></div>
+    </section>
     <script src="navbar.js"></script>
+    <script src="search.js"></script>
   </body>
 </html>
